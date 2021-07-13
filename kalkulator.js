@@ -1,4 +1,4 @@
-let input = document.getElementsByTagName('input')[0]
+let input = document.getElementsByTagName('input')[0];
 input.setAttribute('id', 'layar');
 
 function css(element, style){
@@ -35,11 +35,11 @@ css(kal, {
 });
 
 
-var conTombol = document.querySelector('.container-tombol');
-var inputLayar= document.querySelector('#layar');
+let tom = document.querySelector('.container-tombol');
+let inputLayar= document.querySelector('#layar');
 
 
-conTombol.addEventListener('click', function(btn){
+tom.addEventListener('click', function(btn){
 	
 	let click = btn.target;
 	let nilai = click.innerText;
