@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<!-- <link rel="stylesheet" type="text/css" href="kalkulator.css"> -->
+	<style type="text/css">
+		.tombol {
+		    display: flex;
+		    width: 25%;
+		    font-size: 20px;
+		    color: grey;
+		    font-weight: bold;
+		    height: 70px;
+		    border: 1px solid #cecece;
+		    border-left: none;
+		    border-top: none;
+		    box-sizing: border-box;
+		    justify-content: center;
+		    align-items: center;
+		}
+		.tombol:nth-child(4n+1) { border-left: 1px solid #cecece; }
+		
+		.tombol:hover {
+		    background:  #aeaeae;
+		    cursor: pointer;
+		}
+
+		#nol{ flex-grow: 1; }
+
+		.operator{
+				background: #d8d8d8;
+				color: black;
+				font-size: 20px;
+			}
+
+		#hitung{
+			background: #ffa64a;
+			color: white; 
+			font-size: 32px;
+		}
+
+		#hitung:hover{ background: orange; }
+
+	</style>
+
+</head>
+<body>
+
+<div class="kalkulator">
+	<input type="text" id="layar">
+
+	<div class="container-tombol" >
+		<span class="tombol operator">C</span>
+		<span class="tombol operator"><=</span>
+		<span class="tombol operator">.</span>
+		<span class="tombol operator">/</span>
+		<span class="tombol">7</span>
+		<span class="tombol">8</span>
+		<span class="tombol">9</span>
+		<span class="tombol operator">*</span>
+		<span class="tombol">4</span>
+		<span class="tombol">5</span>
+		<span class="tombol">6</span>
+		<span class="tombol operator">+</span>
+		<span class="tombol">1</span>
+		<span class="tombol">2</span>
+		<span class="tombol">3</span>
+		<span class="tombol operator">-</span>
+		<span class="tombol" id="nol">0</span>
+		<span class="tombol" id="hitung">=</span>
+
+	</div>
+</div>
+
+<script type="text/javascript" src="kalkulator.js"></script>
+
+</body>
+</html>
